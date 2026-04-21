@@ -1,0 +1,41 @@
+{
+    "name": "duorenwei/laravel-dm8",
+    "description": "DM8 database driver for Laravel with project-maintained fixes.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "dm8",
+        "dameng",
+        "database"
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-pdo": "*",
+        "illuminate/database": "^9.0",
+        "illuminate/pagination": "^9.0",
+        "illuminate/support": "^9.0",
+        "illuminate/validation": "^9.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helper.php"
+        ],
+        "psr-4": {
+            "Duorenwei\\LaravelDm8\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Duorenwei"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Duorenwei\\LaravelDm8\\Dm8\\Dm8ServiceProvider",
+                "Duorenwei\\LaravelDm8\\Dm8\\Dm8ValidationServiceProvider"
+            ]
+        }
+    }
+}
